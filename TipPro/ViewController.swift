@@ -66,6 +66,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tipSelector.addTarget(self, action: #selector(calculateTip(_:)), for: .valueChanged)
         
     }
 
